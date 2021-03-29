@@ -1,0 +1,3 @@
+[bandit]
+targets: backend
+exclude: backend/.venv,backend/tests/*,backend/*/tests/*,backend/*/*/tests/*,backend/*/*/*/tests/*

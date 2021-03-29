@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "my-company-demo-app"
+version = "1.0.0"
+description = "MyCompany demo app backend"
+authors = ["Digital Living International Ltd"]
+license = "BSD-3-Clause"
+packages = [{include = "app", from="."}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.61.1"
+uvicorn = "^0.11.3"
+ujson = "^2.0.3"
+requests = "^2.23.0"
+aiofiles = "^0.4.0"
+invoke = "^1.4.1"
+httpx = "^0.15.5"
+mock = "^4.0.2"
+pytest = "^5.4.1"
+bandit = "^1.6.2"
+python-multipart = "^0.0.5"
+pyjwt = "^1.7.1"
+pydantic = {extras = ["email"], version = "^1.5.1"}
+cryptography = "^3.1"
+firedantic = "^0.1.4"
+loguru = "^0.5.3"
+stringcase = "^1.2.0"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.5.3"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
