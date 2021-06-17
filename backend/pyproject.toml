@@ -20,7 +20,7 @@ pytest = "^5.4.1"
 bandit = "^1.6.2"
 python-multipart = "^0.0.5"
 pyjwt = "^1.7.1"
-pydantic = {extras = ["email"], version = "^1.5.1"}
+pydantic = {extras = ["dotenv"], version = "^1.8.2"}
 cryptography = "^3.1"
 firedantic = "^0.1.4"
 loguru = "^0.5.3"
