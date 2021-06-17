@@ -72,7 +72,7 @@ class API {
     )
   }
 
-  async getCompanyBasicInfo(companyId, source = 'DigitalLivingPRH') {
+  async getCompanyBasicInfo(companyId, source = 'digitalliving') {
     return this.responseWrapper(
       await fetch(`${this.baseUrl}/dataProduct/Company/BasicInfo?source=${source}`, {
         method: 'POST',
@@ -86,7 +86,7 @@ class API {
     )
   }
 
-  async getOwnershipData(companyId, source = 'DigitalLivingWealthRegister') {
+  async getOwnershipData(companyId, source = 'digitalliving:v1') {
     return this.responseWrapper(
       await fetch(`${this.baseUrl}/dataProduct/Company/Shareholders?source=${source}`, {
         method: 'POST',

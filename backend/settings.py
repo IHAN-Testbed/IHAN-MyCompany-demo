@@ -45,5 +45,8 @@ class Settings(BaseSettings):
     def is_local_env(self):
         return self.ENV == "development"
 
+    class Config:
+        env_file = ".env"
+
 
 conf = Settings()
