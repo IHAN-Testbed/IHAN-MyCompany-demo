@@ -86,7 +86,7 @@ class API {
     )
   }
 
-  async getOwnershipData(companyId, source = 'digitalliving') {
+  async getOwnershipData(companyId, source = 'digitalliving:v1') {
     return this.responseWrapper(
       await fetch(`${this.baseUrl}/dataProduct/Company/Shareholders?source=${source}`, {
         method: 'POST',
